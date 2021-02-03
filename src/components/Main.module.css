@@ -1,0 +1,62 @@
+.main  {
+  background-color: red;
+}
+
+.section::before {
+  content:"";
+  align-items: center;
+  background: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/8/1/881415294f_50170557_code-html-sashkin-adobe-stock.jpg")
+    no-repeat center / cover;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  z-index: -1;
+}
+
+.section {
+  align-items: center;
+  background: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/8/1/881415294f_50170557_code-html-sashkin-adobe-stock.jpg")
+    no-repeat center / cover;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  width: 100%;
+}
+
+.section:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+  z-index: -2;
+}
+
+.section:nth-child(3) {
+  background-image: url("https://www.archimag.com/sites/archimag.com/files/web_articles/image/regionjob_informatique.jpg");
+  z-index: -3;
+}
+
+.section:last-child {
+  background-image: url("https://www.pedagogie.ac-nantes.fr/medias/photo/code-3337044-640_1552666744568-jpg?ID_FICHE=530247");
+  z-index: -4;
+}
+
+.title {
+  color: #fff;
+  font-size: 5rem;
+  text-stroke: 0.1px #000;
+  -webkit-text-stroke: 1px #000;
+}
+
+@supports not (-webkit-text-stroke: 1px #000) {
+  .title {
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
