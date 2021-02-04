@@ -5,9 +5,7 @@ import CardAdmins from "../commons/CardAdmin/CardAdmin";
 import Favourites from "./Favourite";
 import styles from "../css/Présentation.module.css";
 
-export default function Presentation(props) {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggle = () => setIsOpen(!isOpen);
+export default function Presentation() {
   const [admins, setAdmins] = useState([]);
 
   useEffect(() => {
@@ -37,7 +35,6 @@ export default function Presentation(props) {
         {admins.map((admin) => (
           <CardAdmins key={admin.idadmin} admin={admin} />
         ))}
-        <h2 className={styles.h2}>mes Favoris</h2>
         <Favourites />
       </div>
     </div>

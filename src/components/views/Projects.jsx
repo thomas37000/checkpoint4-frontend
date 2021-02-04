@@ -3,8 +3,9 @@ import axios from "axios";
 import styles from "../css/Présentation.module.css";
 import CardProjects from "../commons/CardProjects/CardProjects";
 import Technos from "./Technos";
+import Clients from "./Clients";
 
-export default function Projects(props) {
+export default function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function Projects(props) {
         {projects.map((project) => (
           <CardProjects key={project.idproject} project={project} />
         ))}
+        <Clients />
         <Technos />
       </div>
     </div>

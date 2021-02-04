@@ -27,19 +27,6 @@ export default function CardAdmin({ admin }) {
           </div>
         </div>
       </div>
-      {/* <Button
-        color="success"
-        onClick={toggle}
-        style={{ marginBottom: "1rem" }}
-      >
-        Présentation
-      </Button>
-      <Collapse isOpen={isOpen}>
-        <Card>
-          <CardBody> 
-        </CardBody>
-        </Card>
-      </Collapse> */}
     </div>
   );
 }

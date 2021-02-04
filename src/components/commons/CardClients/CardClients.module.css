@@ -1,8 +1,8 @@
-.divCardFavourite {
+.divCardClients {
   background: #fff;
 }
 
-.CardFavourite {
+.CardClients {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
   margin-right: 3rem;
 }
 
-.logoFavourite {
+.logoClients {
   margin-right: 1rem;
   border-radius: 50%;
   width: 150px;
@@ -24,14 +24,14 @@
 
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
-  .divCardFavourite {
+  .divCardClients {
     margin: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  .CardFavourite {
+  .CardClients {
     display: grid;
   }
 }

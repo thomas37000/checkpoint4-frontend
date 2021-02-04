@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import styles from "./CardProjects.module.css";
 
 export default function CardProjects(projects) {
+  const {name, pictures, description} = projects;
   return (
     <div className={styles.projects}>
       <div className={styles.contents}>
         <div className={styles.box}>
           <h2>{projects.name}</h2>
-          <img src={projects.pictures} alt={projects.name} />
-          <p>{projects.description}</p>
+          <img src={pictures} alt={name} />
+          <p>{description}</p>
           <p>
             <a className={styles.disabled} href={projects.links}>
               Link
@@ -28,7 +29,6 @@ export default function CardProjects(projects) {
     </div>
   );
 }
-
 
 CardProjects.propTypes = {
   description: PropTypes.string.isRequired,

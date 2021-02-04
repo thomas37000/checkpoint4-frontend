@@ -1,17 +1,6 @@
-/* .section::before {
-  content:"";
-  background: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/8/1/881415294f_50170557_code-html-sashkin-adobe-stock.jpg")
-    no-repeat center / cover;
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  padding: 1rem;
-  position: sticky;
-  width: 100%;
-  z-index: -1;
-} */
+.section:target {
+  display: block;
+}
 
 .section {
   align-items: center;

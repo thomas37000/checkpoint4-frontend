@@ -17,19 +17,6 @@ export default function CardTechnos(techno) {
           <h2>{techno.name}</h2>
         </div>
       </div>
-      {/* <Button
-        color="success"
-        onClick={toggle}
-        style={{ marginBottom: "1rem" }}
-      >
-        Présentation
-      </Button>
-      <Collapse isOpen={isOpen}>
-        <Card>
-          <CardBody> 
-        </CardBody>
-        </Card>
-      </Collapse> */}
     </div>
   );
 }

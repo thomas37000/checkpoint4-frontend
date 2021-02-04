@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Collapse, Button, CardBody, Card } from "reactstrap";
 import axios from "axios";
-// import styles from "../css/Présentation.module.css";
+import styles from "../css/Présentation.module.css";
 import CardFavourites from "../commons/CardFavourites/CardFavourites";
 
-export default function Favourites() {
+export default function Favourites(props) {
   const [favourites, setFavourites] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     const { REACT_APP_SERVER_ADDRESS } = process.env;
@@ -28,12 +31,22 @@ export default function Favourites() {
   }, []);
 
   return (
-    <div>
-      <div>
-        {favourites.map((favourite) => (
-          <CardFavourites key={favourite.idfavourite} favourite={favourite} />
-        ))}
-      </div>
-    </div>
+    <>
+      <Button color="link" className={styles.btn} onClick={toggle} style={{ marginBottom: "1rem" }}>
+        <h2 className={styles.h2}>mes Hobbies</h2>
+      </Button>
+      <Collapse isOpen={isOpen}>
+        <Card>
+          <CardBody>
+            {favourites.map((favourite) => (
+              <CardFavourites
+                key={favourite.idfavourite}
+                favourite={favourite}
+              />
+            ))}
+          </CardBody>
+        </Card>
+      </Collapse>
+    </>
   );
 }
