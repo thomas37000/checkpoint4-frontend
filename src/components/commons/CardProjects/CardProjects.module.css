@@ -1,0 +1,65 @@
+.divCardAdmin {
+  background: #fff;
+}
+
+.CardAdmin {
+  display: flex;
+  align-items: center;
+}
+
+.CardDescription {
+  display: grid;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+.logoAdmin {
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 15%;
+  height: 100%;
+}
+
+.box {
+  width: 25%;
+  padding: 30px;
+  border: 1px solid #e6ecf8;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  background: #fff;
+}
+
+.box h2 {
+  text-align: center;
+}
+
+.box a:hover {
+  opacity: 0.8;
+  color: red;
+}
+
+.projects a {
+  color: #750ff7;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .divCardAdmin {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+
+  .logoAdmin {
+    width: 50%;
+  }
+}
+

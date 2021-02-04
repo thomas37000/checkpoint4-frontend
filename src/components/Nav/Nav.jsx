@@ -1,8 +1,8 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.svg";
-import styles from "./Nav.module.css";
+import logo from "../../logo.svg";
+import styles from "../css/Nav.module.css";
 
 export default function Nav() {
   return (

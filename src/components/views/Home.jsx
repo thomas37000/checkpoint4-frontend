@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Projects from "./Projects";
-// import Presentation from "./Présentation";
-import styles from "./Main.module.css";
+import styles from "../css/Home2.module.css";
 
 export default function Main() {
   return (

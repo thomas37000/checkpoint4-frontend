@@ -1,7 +1,3 @@
-.main  {
-  background-color: red;
-}
-
 .section::before {
   content:"";
   align-items: center;
