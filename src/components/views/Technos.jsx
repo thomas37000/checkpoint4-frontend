@@ -45,7 +45,7 @@ export default function Technos(props) {
         <Card>
           <CardBody>
             {technos.map((techno) => (
-              <CardTechnos key={techno.idtechno} admin={techno} />
+              <CardTechnos key={techno.idtechno} techno={techno} />
             ))}
           </CardBody>
         </Card>

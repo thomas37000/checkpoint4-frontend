@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 // import { Button ,Collapse, CardBody, Card } from "reactstrap";
-import CardAdmins from "../commons/CardAdmin/CardAdmin";
+// import CardAdmin from "../commons/CardAdmin/CardAdmin";
 import Favourites from "./Favourite";
 import styles from "../css/Présentation.module.css";
+import CardAdminBis from "../commons/CardAdmin/CardAdminBis";
 
 export default function Presentation() {
   const [admins, setAdmins] = useState([]);
@@ -33,7 +34,8 @@ export default function Presentation() {
     <div className={styles.container}>
       <div>
         {admins.map((admin) => (
-          <CardAdmins key={admin.idadmin} admin={admin} />
+          // <CardAdmin key={admin.idadmin} admin={admin} />
+          <CardAdminBis key={admin.idadmin} admin={admin} />
         ))}
         <Favourites />
       </div>

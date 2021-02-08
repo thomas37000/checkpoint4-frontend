@@ -1,5 +1,9 @@
-.container {
+/* .container {
   background-image: url("https://www.pedagogie.ac-nantes.fr/medias/photo/code-3337044-640_1552666744568-jpg?ID_FICHE=530247");
+} */
+
+.h1 {
+  color: #000;
 }
 
 .avatar {

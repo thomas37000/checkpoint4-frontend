@@ -1,8 +1,5 @@
-.section:target {
-  display: block;
-}
-
-.section {
+.section::before {
+  content:"";
   align-items: center;
   background: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/8/1/881415294f_50170557_code-html-sashkin-adobe-stock.jpg")
     no-repeat center / cover;
@@ -14,6 +11,18 @@
   position: sticky;
   width: 100%;
   z-index: -1;
+}
+
+.section {
+  align-items: center;
+  background: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/8/8/1/881415294f_50170557_code-html-sashkin-adobe-stock.jpg")
+    no-repeat center / cover;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  width: 100%;
 }
 
 .section:nth-child(2) {
@@ -43,4 +52,7 @@
     text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
       -1px 1px 0 #000, 1px 1px 0 #000;
   }
+}
+
+@media screen and (min-width: 768px) {
 }

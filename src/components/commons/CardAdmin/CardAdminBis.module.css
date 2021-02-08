@@ -1,0 +1,114 @@
+.FicheAdmin {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.divTitle h1{
+  color: #000;
+  font-size: 5rem;
+  top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logoAdmin {
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 15%;
+  height: 100%;
+}
+
+.divAdmin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.divPresentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.email {
+  margin-top: 1rem;
+}
+
+.presentation {
+  margin: 2.867rem 0 0.5rem 0;
+  padding-top: 0.7rem;
+  padding-left: 1.15rem;
+}
+
+.textPresentation {
+  margin-bottom: 2rem;
+  width: 18.933rem;
+  text-align: start;
+}
+
+.divLinkedin {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.getLinkedin {
+  display: block;
+}
+
+.hideLinkedin {
+  display: none;
+}
+
+.linkedinImg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+.linkLinkedin {
+  text-decoration: underline;
+  color: var(--dark-grey-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .FicheAdmin {
+    display: block;
+    margin-bottom: 1.867rem;
+  }
+
+  .divTitle {
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .divAdmin {
+    flex-direction: row;
+  }
+
+  .divPresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6.467rem;
+  }
+
+  .textPresentation {
+    margin: auto;
+    text-align: start;
+    width: 100%;
+    max-width: 41rem;
+    min-height: 6rem;
+  }
+}

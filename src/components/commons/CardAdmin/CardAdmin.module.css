@@ -1,6 +1,12 @@
 .divCardAdmin {
   background: #fff;
 }
+.description h1 {
+  color: #000;
+  font-size: 5rem;
+  top: 1rem;
+  margin-bottom: 2rem;
+}
 
 .CardAdmin {
   display: flex;
@@ -26,7 +32,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
   }
 
   .logoAdmin {

@@ -5,9 +5,10 @@ import {
   Redirect,
   Route,
 } from "react-router-dom";
+import CardLogin from "../commons/CardLogin/CardLogin";
 import Presentation from "../views/Présentation";
 import Projects from "../views/Projects";
-import Main from "../views/Home";
+import Home from "../views/Home";
 import Nav from "../Nav/Nav";
 import "../../App.css";
 
@@ -19,10 +20,10 @@ export default function Routter(vinyle) {
         <Switch>
           <Route exact path="/">
             {/* <h1>Mon Portfolio</h1> */}
-            <Main />
+            <Home />
           </Route>
           <Route path="/admin">
-            <h1>Admin</h1>
+            <CardLogin />
           </Route>
           <Route path="/présentation">
             <Presentation />
